@@ -1,0 +1,246 @@
+html{
+    height: 100%;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: lightgray;
+    min-height: 100%;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+/* Global */
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+.button1{
+    height: 38px;
+    background: tomato;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+
+.dark{
+    padding: 15px;
+    background: gray;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Header */
+header{
+    background: grey;
+    color: white;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: tomato 3px solid;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+header li{
+    display: inline;
+    padding: 0 20px;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a{
+    color: violet;
+}
+
+header a:hover{
+    color: thistle;
+}
+
+/* Showcase */
+
+#showcase{
+    min-height: 200px;
+    background: url('../img/sociedadanonima.png') no-repeat center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    text-shadow:
+     -1px -1px 0 black,  
+      1px -1px 0 black,
+      -1px 1px 0 black,
+       1px 1px 0 black;
+}
+
+#showcase h1{
+    margin-top: 50px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 20px;
+}
+
+/* Newsletter */
+
+#newsletter{
+    padding: 15px;
+    color: white;
+    background: gray;
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 15px;
+}
+
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/* Boxes */
+
+#boxes{
+    margin-top: 20px;
+    padding-bottom: 60px;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box img{
+    width: 90px;
+}
+
+/* Sidebar */
+
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+aside#sidebar .message input, aside#sidebar .message textarea{
+    width: 90%;
+    padding: 5px;
+}
+
+/* Main-col */
+
+article#main-col{
+    float: left;
+    width: 65%;
+    padding-bottom: 60px;
+}
+
+/* Services */
+
+ul#services{
+    padding-bottom: 60px;
+}
+
+ul#services li{
+    list-style: none;
+    padding: 20px;
+    border: black solid 1px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    background: white;
+}
+
+/* Footer */
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    color: white;
+    background-color: tomato;
+    text-align: center;
+}
+
+/* Media Queries */
+
+@media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar{
+        float:none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+
+    #showcase h1{
+        margin-top:40px;
+    }
+
+    #newsletter button, .message button{
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter form input[type="email"], .message input, .message textarea{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    ul#services{
+        padding-bottom: 0px;
+    }
+
+    aside#sidebar{
+        padding-bottom: 60px;
+    }
+
+    article#main-col{
+        padding-bottom: 0px;
+    }
+}
