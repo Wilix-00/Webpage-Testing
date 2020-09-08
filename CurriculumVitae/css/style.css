@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -106,20 +109,27 @@ section p{
     header{
         float: none;
         width: 100%;
+        padding: 0;
+        margin: 0;
     }
 
     aside{
         float: none;
         width: 100%;
         padding: 0 1em;
+        margin: 0;
     }
 
     section{
         float: none;
         width: 100%;
+        padding: 0 1em;
+        margin: 0;
     }
 
     section p{
-        width: 90%;
+        width: 100%;
+        padding: 0 1em;
+        margin: 0;
     }
 }
