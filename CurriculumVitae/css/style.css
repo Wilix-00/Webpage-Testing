@@ -106,10 +106,14 @@ section p{
 
 
 @media(max-width: 890px){
+    body{
+        margin: 0 0 1.5em 0;
+    }
+
     header{
         float: none;
         width: 100%;
-        padding: 0;
+        padding: 1em 0 0 0;
         margin: 0;
     }
 
