@@ -1,0 +1,88 @@
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+}
+
+/* HEADER */
+
+header{
+    border: 0px dotted darkgray;
+    text-align: center;
+    background-color: gainsboro;
+    padding: 1em 0;
+}
+
+header img{
+    width: 10%;
+    border-radius: 10%;
+}
+
+header h1{
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+header p{
+    text-transform: uppercase;
+    padding: 0;
+    margin: 0;
+}
+
+/* ASIDE */
+
+aside{
+    border: 0px dotted darkgray;
+    float: left;
+    width: 24%;
+    text-align: center;
+    padding: 0 1em;
+}
+
+aside ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside h2{
+    border-bottom: 2px solid black;
+}
+
+aside a{
+    color: brown;
+}
+
+aside a:visited{
+    color: brown;
+}
+
+aside a:hover{
+    color: red;
+}
+
+/* SECTIONS */
+
+section{
+    border: 0px dotted darkgray;
+    float: right;
+    width: 70%;
+    padding: 0.5em 1em;
+}
+
+section h2{
+    border-bottom: 2px solid black;
+}
+
+section h3{
+    font-weight: normal;
+    color: brown;
+}
+
+section h3 strong{
+    color: black;
+}
