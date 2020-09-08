@@ -13,11 +13,15 @@ header{
     border: 0px dotted darkgray;
     text-align: center;
     background-color: gainsboro;
-    padding: 1em 0;
+    float: right;
+    width: 70%;
+    padding: 1em 0.5em;
+    margin: 0;
 }
 
 header img{
     width: 10%;
+    min-width: 75px;
     border-radius: 10%;
 }
 
@@ -40,7 +44,7 @@ aside{
     float: left;
     width: 24%;
     text-align: center;
-    padding: 0 1em;
+    padding: 5em 1em 0 1em;
 }
 
 aside ul{
@@ -71,7 +75,11 @@ section{
     border: 0px dotted darkgray;
     float: right;
     width: 70%;
-    padding: 0.5em 1em;
+    padding: 0.5em;
+}
+
+section img{
+    height: 1em;
 }
 
 section h2{
@@ -85,4 +93,33 @@ section h3{
 
 section h3 strong{
     color: black;
+}
+
+section p{
+    width: 75%;
+}
+
+/* MEDIA QUERIES */
+
+
+@media(max-width: 890px){
+    header{
+        float: none;
+        width: 100%;
+    }
+
+    aside{
+        float: none;
+        width: 100%;
+        padding: 0 1em;
+    }
+
+    section{
+        float: none;
+        width: 100%;
+    }
+
+    section p{
+        width: 90%;
+    }
 }
